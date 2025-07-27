@@ -14,20 +14,8 @@
     // Sample Output:
     // 300
 
-    let takeToBuy = Number(prompt("How much money did I take:"));
-    let costOfOrange = Number(prompt("Cost of 1 kg of orange:"));
-    let costOfapples = Number(prompt("Cost of 1 kg of apples:"));
-    let totalCost = costOfOrange + costOfapples;
-    let returnedMoney = takeToBuy - totalCost;
-
-    console.log("The shopkeeper returned:", returnedMoney, "Taka");
+    let moneyToBuy = 1000;
+    let moneySpent = 700;
+    let moneyLeft  = moneyToBuy - moneySpent;
     
-    let number1= prompt("Enter a number:");
-let number2= prompt("Enter a number:");
-
-// Convert the input (which is a string) to a number
-number = number1 + number2;
-
-console.log("You entered:", number1);
-console.log("You entered:", number2);
-console.log("Total:", number);
+    console.log(moneyLeft);
