@@ -14,6 +14,6 @@
 // 4
 
 let number = 119;
-let remainder = number % 5;
+let remainderResult = number % 5;
 
-console.log(remainder);
+console.log(remainderResult);
