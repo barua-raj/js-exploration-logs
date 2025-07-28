@@ -8,11 +8,20 @@
 //     D: 60-69
 //     F: 0-59
 
+const marks = 65;
 
-// Import prompt-sync
-const prompt = require('prompt-sync')();
-
-let input = prompt("Enter an integer:");
-let number = parseInt(input);
-
-console.log("You entered:", number);
+if (marks >= 90 && marks <= 100) {
+    console.log("Grade A");
+}
+else if (marks >= 80 && marks <=89) {
+    console.log("Grade B");
+}
+else if (marks >= 70 && marks <= 79) {
+    console.log("Grade C");
+}
+else if (marks >= 60 && marks <= 69) {
+    console.log("Grade D");
+}
+else {
+    console.log("Failed");
+}
