@@ -1,9 +1,9 @@
-// Practice Task 05 : Ticket Fare Calculator
-// Ticket fare Calculator
-//     - Children (age < 10): free
-//     - Students get a 50% discount
-//     - Senior citizens (age >= 60) gets a 15% Discount
-//     - Otherwise Regular ticket fare 800 tk
+// Practice Task 06 : Ticket Fare Calculator
+    // Ticket fare Calculator
+    //     - Children (age < 10): free
+    //     - Students get a 50% discount
+    //     - Senior citizens (age >= 60) gets a 15% Discount
+    //     - Otherwise Regular ticket fare 800 tk
 
 const regularPrice = 800;
 const age = 25;
@@ -12,8 +12,10 @@ const isStudent = true;
 if (age < 10) {
   console.log("Free Ticket as you are a child!");
 }
-else if (isStudent === false) {
-    console.log("As you are a student, you will pay regular ticket fare which is",regularPrice,"Taka!");
+else if (isStudent === true) {
+  const stuDiscountPrice = regularPrice * (50 / 100);
+  const stuPayAmount = regularPrice - stuDiscountPrice;  
+  console.log("As you are a student, you will pay ",stuPayAmount,"Taka!");
 }
 else if (age >= 60) {
   const discountPrice = regularPrice * (15 / 100);
