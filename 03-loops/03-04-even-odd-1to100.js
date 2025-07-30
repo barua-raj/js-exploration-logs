@@ -1,10 +1,10 @@
-let num = 1;
-while (num <= 100) {
-    if (num % 2 == 0) {
-        console.log(num, "is even!");
+let number = 1;
+while (number <= 100) {
+    if (number % 2 == 0) {
+        console.log(number, "is even!");
     }
     else {
-        console.log(num, "is odd!");
+        console.log(number, "is odd!");
     }
-    num++;
+    number++;
 }
