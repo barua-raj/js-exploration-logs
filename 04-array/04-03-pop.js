@@ -8,4 +8,7 @@ console.log(out1);
 const out2 = friends.pop();
 console.log(out2);
 
-console.log(out1, out2);
+const out3 = friends.pop();
+console.log(out3);
+
+console.log(out1, out2, out3);
