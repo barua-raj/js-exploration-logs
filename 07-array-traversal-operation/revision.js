@@ -47,5 +47,4 @@ console.log("\n");
 
 for (let j = 5; j >= 0; j--) {
     console.log("Count - ", j);
-    
 }
