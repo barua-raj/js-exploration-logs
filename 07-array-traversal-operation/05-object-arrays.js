@@ -21,3 +21,19 @@ for (const empTemp of employees) {
     const personInfo = person.name + ': ' + person.salary;
     console.log(personInfo);
 }
+
+const examMarks = [
+    [98, 87, 45, 96, 12],
+    [52, 63, 95, 12, 52],
+    [12, 65, 32, 78, 25],
+    [14, 32, 96, 47, 85]
+]
+// console.log(examMarks[2]);
+// console.log(examMarks[1][3]);
+
+examMarks[2][4] = 100;
+console.log(examMarks);
+
+
+
+
