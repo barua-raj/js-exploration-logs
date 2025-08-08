@@ -26,4 +26,3 @@ products[1] = 60;
 console.log(products);
 
 console.log(compProducts);
-

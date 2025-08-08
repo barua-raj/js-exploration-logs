@@ -9,7 +9,6 @@ function moneyBag() {
     console.log("I have " + money + " in my moneybag!");
 }
 moneyBag();
-
 function sumOfTwo(input1, input2) {
     let sum = input1 + input2;
     console.log(sum);
