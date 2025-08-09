@@ -13,4 +13,3 @@ function count_zero(character){
 const countZero = '11100010101000';
 const finalCount = count_zero(countZero);
 console.log(finalCount);
-
