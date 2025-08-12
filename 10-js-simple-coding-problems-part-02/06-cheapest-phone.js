@@ -1,20 +1,18 @@
 const phones = [
-    { name: 'Samsung', price: 20000, camera: '12mp', color: 'black'},
-    { name: 'Xiaomi', price: 18000, camera: '12mp', color: 'red'},
-    { name: 'Oppo', price: 30000, camera: '12mp', color: 'green'},
-    { name: 'iPhone', price: 100000, camera: '12mp', color: 'blue'},
-    { name: 'Walton', price: 31000, camera: '12mp', color: 'black'},
-    { name: 'HTC', price: 27000, camera: '12mp', color: 'grey'}
+    {name: 'Samsung', price: 45000, camera: '12mp', color: 'black'},
+    {name: 'iPhone', price: 120000, camera: '14mp', color: 'red'},
+    {name: 'Xiaomi', price: 5000, camera: '13mp', color: 'green'},
+    {name: 'Walton', price: 2000, camera: '12mp', color: 'grey'},
+    {name: 'HTC', price: 21000, camera: '10mp', color: 'blue'}
 ]
-
 function getCheapestPhone(phones){
-    let min = phones[0]
-    for (const phone of phones){
-        if (phone.price < min.price) {
-            min = phone;
+    let minPrice = phones[0];
+    for (const phone of phones) {
+        if (phone.price < minPrice.price) {
+            minPrice = phone;
         }
     }
-    return min;
+    return minPrice;
 }
 const price = getCheapestPhone(phones);
-console.log("The cheapest phone is: ", price);
+console.log("The cheapest phone is:", price);
