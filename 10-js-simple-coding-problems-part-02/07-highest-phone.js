@@ -5,14 +5,14 @@ const phones = [
     {name: 'Walton', price: 2000, camera: '12mp', color: 'grey'},
     {name: 'HTC', price: 21000, camera: '10mp', color: 'blue'}
 ]
-function getCheapestPhone(phones){
-    let minPrice = phones[0];
+function getHighest(phones){
+    let maxPrice = phones[0];
     for (const phone of phones) {
-        if (phone.price < minPrice.price) {
-            minPrice = phone;
+        if (phone.price > maxPrice.price){
+            maxPrice = phone;
         }
     }
-    return minPrice;
+    return maxPrice;
 }
-const price = getCheapestPhone(phones);
-console.log("The cheapest phone is:", price);
+const result = getHighest(phones);
+console.log("The most valuable phone is:", result);
