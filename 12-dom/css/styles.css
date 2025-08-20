@@ -6,4 +6,17 @@ li{
 }
 #food-title{
     color: green;
+    /* background-color: lightgreen; */
+}
+.foods .foreign-food{
+    font-weight: 700;
+}
+.bg-red{
+    background-color: red;
+}
+.bold{
+    font-weight: 300;
+}
+.big{
+    font-size: 3em;
 }
