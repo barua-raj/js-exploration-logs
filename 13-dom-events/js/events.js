@@ -22,3 +22,5 @@ btnMakePurple.onclick = makePurple;
 function makePurple(){
     document.body.style.backgroundColor = 'purple';
 }
+
+// option 4: add eventListener
