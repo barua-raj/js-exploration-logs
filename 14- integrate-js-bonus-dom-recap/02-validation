@@ -1,0 +1,17 @@
+const number = '50';
+console.log(typeof number);
+
+if (typeof number === 'number') {
+    console.log("Number");
+}
+else {
+    console.log("Not a number");
+}
+
+const numbers = [3, 12, 54, 50];
+console.log(typeof numbers);
+console.log(Array.isArray(numbers));
+
+
+const student = {name: 'Rahman Aslam', job: 'Docotor'};
+console.log(typeof student);
