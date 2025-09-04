@@ -9,6 +9,5 @@ const student = {
         //     age: 50
         // }
     },
-    'home-address': 'ctg'
 }
 console.log(student.family.mother?.age);
