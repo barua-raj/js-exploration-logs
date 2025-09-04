@@ -1,0 +1,27 @@
+// loop in array
+const numbers = [1, 25, 42, 21, 8];
+for (const num of numbers) {
+    // console.log(num);
+}
+
+// loop in object
+const employee = {
+    name: 'abul',
+    designation: 'designer',
+    salary: 20000,
+    experience: 1,
+    age: 22
+}
+for (const key in employee) {
+    const value = employee[key];
+    console.log(key, value);
+    console.log(value);
+}
+
+const keys = Object.keys(employee);
+// console.log(keys);
+
+for (const key of keys) {
+    const value = employee[key];
+    // console.log(value);
+}
