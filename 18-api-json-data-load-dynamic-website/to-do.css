@@ -1,0 +1,14 @@
+body {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.title {
+    text-align: center;
+}
+.todo-card {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid gray;
+    margin-bottom: 30px;
+}
