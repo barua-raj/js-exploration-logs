@@ -1,8 +1,8 @@
-const loadToDo = () => {
+const loadToDo = async() => {
     const url = "https://jsonplaceholder.typicode.com/todos";
-    fetch(url)
-    .then((res) => res.json())
-    .then((data) => displayToDo(data));
+    const res = await fetch(url);
+    const data = await res.json();
+    displayToDo(data);
 };
 const displayToDo = (todos) => {
     const todoContainer = document.getElementById("to-do-container");
