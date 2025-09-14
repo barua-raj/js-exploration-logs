@@ -6,11 +6,19 @@ const products = [
     {name: "vivo plus", brand: "vivo", price: 4000, color: "red"}
 ];
 // 1.
-// const result = products.map(product => product.price);
-// console.log(result);
+const result = products.map(product => product.price);
+console.log(result);
+
 
 // 2.
-const result = products.map(product => {
-    console.log(product.brand);
-    console.log(product.color);
+const result2 = products.map(product => {
+    console.log(product.price);
 });
+
+products.forEach(product => console.log(product));
+
+const productResult = products.filter(product => product.price <= 2000);
+console.log(productResult);
+
+const productResult2 = products.find(product =>  product.price <= 2000);
+console.log(productResult2);
